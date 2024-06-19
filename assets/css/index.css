@@ -160,7 +160,7 @@ a{
 /*****IMAGENS DOS CARDS********/
 #card1{background-image: url(/assets/img/background/CONSTELAÇÕES.webp);}
 #card2{background-image: url(/assets/img/background/galarias-ia.jpg);}
-#card3{background-image: url(./assets/img/background/noticia-ia2.jpg);}
+#card3{background-image: url(/assets/img/background/noticia-ia2.jpg);}
 
 /********* Estilos para o texto dentro do cartão *************/
 p {
