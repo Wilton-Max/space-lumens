@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+}
+
+body{
+    background-image: url(/assets/img/background/background-header.jpg);
+    overflow:inherit;
+    font-family: "Orelega one";
+}
+
+header{ width: 90vw;}
+
+a{
+  text-decoration:none;
+  color:#afffff;
+}
+
+#planets-header {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  margin: 50px auto;
+  background-image: url(/assets/img/background/espaco-sideral.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+
+/* Ajustes de posicionamento para cada planeta */
+.sol {
+  position: relative;
+  left: 22%; 
+}
+.mercurio {
+  position: relative;
+  left: 150px;
+}
+.venus {
+  position: relative;
+  left: 100px; 
+}
+.terra {
+  position: relative;
+  left: 70px; 
+}
+.marte {
+  position: relative;
+  left: 18px; 
+}
+.jupiter {
+  position: relative;
+  right: 25px; 
+}
+.saturno {
+  position: relative;
+  right: 40px; 
+}
+.urano {
+  position: relative;
+  right: 80px; 
+}
+.netuno {
+  position: relative;
+  right: 120px; 
+}
+
+.sol:hover{transform: scale(1.1);transition: 1s;}
+.mercurio:hover{transform: scale(1.2);transition: 1s;}
+.venus:hover{transform: scale(1.2);transition: 1s;}
+.terra:hover{transform: scale(1.2);transition: 1s;}
+.marte:hover{transform: scale(1.2);transition: 1s;}
+.jupiter:hover{transform: scale(1.2);transition: 1s;}
+.saturno:hover{transform: scale(1.2);transition: 1s;}
+.urano:hover{transform: scale(1.2);transition: 1s;}
+.netuno:hover:hover{transform: scale(1.2);transition: 1s;}
+  
+/************MENU DE NAVEGAÇÃO**************/
+.nav-header { 
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    width: 200px;
+    border: none; 
+    font-size: 1.3rem;
+}
+  
+  .nav-header a {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(0, 0, 51, 0.8); 
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 2px;
+    border-radius: 5px; 
+    transition: all 0.3s ease; 
+    text-shadow: 0 0 5px #007bff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .nav-header a:hover {
+    transform: scale(1.1); 
+    background-color: #007bff; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .item-curiosidade{width: 13vw;}
+  .item-viagem{width: 8vw;}
+  .item-home{width: 6vw;}
+
+/**********ESTILO DA SECTION DOS CARDS***********/
+
+#section-cards {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  width: 96vw; 
+  padding:50px 0 100px 0; 
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: linear-gradient(to bottom, rgba(10, 10, 50, 0.8), rgba(10, 10, 50, 0)); 
+  border: 3px solid #555; 
+  border-radius: 15px; 
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3); 
+}
+
+.card {
+    width: 20vw;
+    height: 32vw;
+    margin-top: 20px;
+    margin-right: 50px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 3px #2fdae0;
+    cursor: pointer;
+}
+
+#card1:hover{
+  transform: translateX(-7px);
+  transition: 1s;
+}
+
+#card2:hover{
+  transform: scale(0.9); 
+  transition: 1s;
+}
+#card3:hover{
+  transform: translateX(7px); 
+  transition: 1s;
+}
+
+/*****IMAGENS DOS CARDS********/
+#card1{background-image: url(/assets/img/background/CONSTELAÇÕES.webp);}
+#card2{background-image: url(/assets/img/background/galarias-ia.jpg);}
+#card3{background-image: url(./assets/img/background/noticia-ia2.jpg);}
+
+/********* Estilos para o texto dentro do cartão *************/
+p {
+  font-family: "Inter";
+  text-align: center;
+  width: 20.2vw;
+  padding: 5px;
+  border: solid 1px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: aqua;
+  position: relative;
+  top: 65px;
+  right: 1.2px;
+  background-color: rgba(163, 131, 131, 0.9); 
+  box-shadow: 0 4px 6px rgba(187, 50, 50, 0.9);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+p:hover{
+    transform: scale(1.1); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    transition: .4s;
+}
+
+button{
+  cursor: pointer;
+  padding: 0.3em 1em;
+  font-size: 17px;
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  position: relative;
+  top: 7px;
+  font-size: 1.1rem;
+  width: 20vw;
+  background-color: rgba(163, 131, 131, 0.5); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  transform: scale(0.9); 
+  background-color: rgba(255, 255, 255, 0.2); 
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: .4s;
+}
+
+footer {
+  padding: 20px; 
+  border-radius: 10px; 
+  text-align: center; 
+  color: #e8e8e8; 
+  background-image: url(/assets/img/background/_7a51b2d2-e609-4990-9f3d-4e7f8361ea4a.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+footer img {
+  width: 150px; 
+  margin-bottom: 10px; 
+}
+
+footer p { 
+  font-size: 0.9rem;
+  margin-bottom: 5px; 
+}
+
+footer a { 
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline; 
+}
